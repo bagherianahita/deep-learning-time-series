@@ -1,6 +1,4 @@
-### AL ###
-#Template for AL projects for Dynamics 365 Business Central
-#launch.json folder
+ #launch.json folder
 .vscode/
 #Cache folder
 .alcache/
@@ -20,3 +18,26 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Virtual environment
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# IDE / editor settings
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
