@@ -20,3 +20,9 @@ Install dependencies:
 ```bash
 pip install -r requirements.txt
 # deep-learning-time-series
+
+True Vertical Depth.   depth at which  measurements were taken.
+SWOB: Surface Weight on Bit. This is a drilling parameter.
+ROP: Rate of Penetration. This is the speed at which the drill bit is advancing.
+GR: Gamma Ray.   well log measurement-natural radioactivity of the formation.
+dependent variable,  DTCO (simulating a Sonic Log). 
