@@ -22,11 +22,11 @@
 
 ---
 
-## Quick start
+## Quick start (employers — ~2 min, synthetic data)
 
 ```bash
 pip install -r requirements.txt
-jupyter notebook "cnn_lstm_time_series.ipynb"
+python demo.py
 ```
 
 ---
