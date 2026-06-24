@@ -1,28 +1,36 @@
-# CNN-LSTM Time Series Prediction
+# Deep Learning Time Series (CNN-LSTM)
 
-This repository contains a hybrid **Convolutional Neural Network (CNN)** and **Long Short-Term Memory (LSTM)** model for time series forecasting.  
-The model combines CNN layers for local feature extraction with LSTM layers for capturing temporal dependencies, enabling accurate predictions on sequential datasets.
+**Hybrid CNN-LSTM model** for multivariate time-series forecasting — applied to drilling / well-log sensor data (DTCO, ROP, GR, etc.).
 
-## Features
-- Preprocessing pipeline for time series data  
-- Hybrid CNN-LSTM deep learning architecture  
-- Training and evaluation scripts  
-- Visualization of loss curves and prediction results  
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=flat-square&logo=jupyter&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-Keras-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
 
-## Requirements
-- Python 3.9+
-- TensorFlow / Keras
-- NumPy
-- Pandas
-- Matplotlib
+---
 
-Install dependencies:
+## Architecture
+
+```
+┌─────────────┐   window    ┌─────────────┐   conv    ┌─────────────┐
+│ Sensor logs │ ──────────► │  CNN layers │ ────────► │  LSTM       │
+│ (multivariate)│           │  feature    │           │  temporal   │
+└─────────────┘             └─────────────┘           └──────┬──────┘
+                                                             ▼
+                                                    ┌─────────────┐
+                                                    │  Forecast   │
+                                                    └─────────────┘
+```
+
+---
+
+## Quick start
+
 ```bash
 pip install -r requirements.txt
-# deep-learning-time-series
+jupyter notebook "cnn_lstm_time_series.ipynb"
+```
 
-True Vertical Depth.   depth at which  measurements were taken.
-SWOB: Surface Weight on Bit. This is a drilling parameter.
-ROP: Rate of Penetration. This is the speed at which the drill bit is advancing.
-GR: Gamma Ray.   well log measurement-natural radioactivity of the formation.
-dependent variable,  DTCO (simulating a Sonic Log). 
+---
+
+## License
+
+MIT — see [LICENSE](LICENSE).
