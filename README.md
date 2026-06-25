@@ -1,4 +1,4 @@
-# Deep Learning Time Series (CNN-LSTM)
+﻿# Deep Learning Time Series (CNN-LSTM)
 
 **Hybrid CNN-LSTM model** for multivariate time-series forecasting — applied to drilling / well-log sensor data (DTCO, ROP, GR, etc.).
 
@@ -22,7 +22,7 @@
 
 ---
 
-## Quick start (employers — ~2 min, synthetic data)
+## Quick start
 
 ```bash
 pip install -r requirements.txt
